@@ -1,0 +1,36 @@
+{
+  "name": "stencil-slots",
+  "private": true,
+  "main": "dist/stencil-slots.js",
+  "scripts": {
+    "build": "npm run clean && stencil build --prerender",
+    "clean": "rimraf dist",
+    "test": "stencil test --e2e --headless",
+    "test:ci": "stencil test --e2e --ci"
+  },
+  "dependencies": {
+    "@stencil/core": "^0.16.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/puppeteer": "1.10.2",
+    "jest": "23.6.0",
+    "jest-cli": "23.6.0",
+    "puppeteer": "1.8.0",
+    "rimraf": "^2.6.2"
+  },
+  "jest": {
+    "clearMocks": true,
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  }
+}
