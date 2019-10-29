@@ -9,7 +9,7 @@
     "test:ci": "stencil test --e2e --ci"
   },
   "dependencies": {
-    "@stencil/core": "^0.16.0"
+    "@stencil/core": "^1.7.5"
   },
   "devDependencies": {
     "@types/jest": "^23.3.10",
