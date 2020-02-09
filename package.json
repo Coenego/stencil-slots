@@ -17,7 +17,7 @@
     "jest": "23.6.0",
     "jest-cli": "23.6.0",
     "puppeteer": "1.11.0",
-    "rimraf": "^2.6.2"
+    "rimraf": "^3.0.2"
   },
   "jest": {
     "clearMocks": true,
